@@ -42,7 +42,7 @@
 <html>
 <head>
 
-  <title>PT. Ardy Mandiri</title>
+  <title>PT. Ardi Mandiri</title>
   
   
   <link rel="stylesheet" href="{{url('/assets/bower_components/bootstrap/dist/css/bootstrap.min.css')}}">

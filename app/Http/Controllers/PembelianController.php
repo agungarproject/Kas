@@ -21,6 +21,12 @@ class PembelianController extends Controller
         return view('pengeluaran.pembelian.index', ['pembelian' => $pembelians]);
     }
 
+    // public function index2()
+    // {
+    //     $pembelians = Pembelian::all();
+    //     return view('pengeluaran.pembelian.index', ['pembelian' => $pembelians]);
+    // }
+
     public function cetak_pdf()
     {
     $pembelian = Pembelian::all();
@@ -35,6 +41,7 @@ class PembelianController extends Controller
      */
     public function create()
     {
+        $pembelians = Pembelian::all();
         $barang = Barang::all();
         $jumlah = Pembelian::count();
         $last_id = Pembelian::orderBy('id', 'desc')->first()->id;
@@ -53,7 +60,7 @@ class PembelianController extends Controller
             $no_trans = 'TRANS0000'.$urutan;
         }
 
-        return view('pengeluaran.pembelian.create', compact('barang', 'no_trans'));
+        return view('pengeluaran.pembelian.create', ['pembelian' => $pembelians], compact('barang', 'no_trans'));
 
     }
 
@@ -135,5 +142,10 @@ class PembelianController extends Controller
         $user = Pembelian::find($id);
         $user->delete();
         return redirect()->route('pembelian.index')->with('hapus', 'Barang berhasil dihapus');
+    }
+
+    public function tes()
+    {
+    return view('pengeluaran.pembelian.tes');
     }
 }

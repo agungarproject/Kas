@@ -57,11 +57,13 @@ Route::get('/admin/suplier/edit/{id}', 'SuplierController@edit')->name('suplier.
 Route::post('/admin/suplier/delete/{id}', 'SuplierController@destroy')->name('suplier.delete');
 Route::post('/admin/suplier/Update/{id}', 'SuplierController@update')->name('suplier.update');
 Route::get('/admin/suplier/getdata/{id}', 'SuplierController@getdata')->name('suplier.getdata');
+
 // Data master pembelian
 Route::get('/pengeluaran/pembelian/create', 'PembelianController@create')->name('Pembelian.create');
 Route::get('/pengeluaran/pembelian/index', 'PembelianController@index')->name('pembelian.index');
 Route::post('/pengeluaran/pembelian/save', 'PembelianController@store')->name('pembelian.save');
 Route::post('/pengeluaran/pembelian/delete/{id}', 'PembelianController@destroy')->name('pembelian.delete');
+Route::get('/pengeluaran/pembelian/tes', 'PembelianController@tes')->name('Pembelian.tes');
 
 // Pemasukan
 

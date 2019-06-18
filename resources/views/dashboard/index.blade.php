@@ -50,7 +50,7 @@
             <div class="inner">
               <h3>44</h3>
 
-              <p>User Registrations</p>
+              <p>Total Suplier</p>
             </div>
             <div class="icon">
               <i class="ion ion-person-add"></i>
@@ -65,7 +65,7 @@
             <div class="inner">
               <h3>65</h3>
 
-              <p>Unique Visitors</p>
+              <p>Total Pembelian</p>
             </div>
             <div class="icon">
               <i class="ion ion-pie-graph"></i>

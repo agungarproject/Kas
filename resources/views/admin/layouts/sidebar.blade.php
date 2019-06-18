@@ -7,7 +7,7 @@
           <img src="{{asset('/assets/dist/img/logopt.png')}}" class="img-circle" alt="User Image">
         </div>
         <div class="pull-left info">
-          <p>PT. Ardy Mandiry</p>
+          <p>PT. Ardy Mandiri</p>
         </div>
       </div>
       <!-- search form -->
